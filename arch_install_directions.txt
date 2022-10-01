@@ -4,3 +4,78 @@ EFI
 
 */
 
+timedatectl set-ntp true
+
+# use "cfdisk /dev/sda" as an alternative to fdisk
+# make sure to remove any existing partitions
+
+fdisk /dev/sda
+g
+n _ _ + 550M
+t 1 
+n _ _ + 2G 
+t 2 19
+n _ _ _ 
+w
+
+mkfs.fat -F32 /dev/sda1
+mkswap /dev/sda2
+swapon /dev/sda2
+mkfs.ext4 /dev/sda3
+
+mount /dev/sda3 /mnt
+pacstrap /mnt base base-devel linux linux-firmware vim
+genfstab -U /mnt >> /mnt/etc/fstab
+
+arch-chroot /mnt
+ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+hwclock --systohc 
+
+vim /etc/locale.gen
+# uncomment en_US.UTF-8 UTF-8
+
+locale-gen
+
+vim /etc/hostname
+# type in a [hostname]
+
+vim /etc/hosts
+127.0.0.1	localhost
+::1			localhost
+127.0.1.1	[hostname].localdomain [hostname] 
+
+passwd 
+useradd -m [username]
+passwd [username]
+
+usermod -aG wheel,audio,video,optical,storage [username]
+
+pacman -S sudo
+visudo
+# uncomment %wheel ALL=(ALL:ALL) ALL:ALL
+
+pacman -S grub networkmanager efibootmgr dosfstools os-prober mtools gcc make git
+
+mkdir /boot/EFI
+mount /dev/sda1 /boot/EFI
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+grub-mkconfig -o /boot/grub/grub.cfg
+
+systemctl enable NetworkManager
+
+exit
+umount -l /mnt
+shutdown now
+
+`````````````````````````````````````````````````````````````````````````````````````
+
+# Log in with [username]
+
+git clone https://github.com/dark-r00t/CINNAMON_POST_INSTALL.git
+cd CINNAMON_POST_INSTALL/
+chmod +x run.sh
+./run.sh
+
+# after installation
+
+reboot
