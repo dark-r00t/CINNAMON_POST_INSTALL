@@ -8,13 +8,13 @@
 <br>`./run.sh` 
 
 ## Standard Neofetch
-![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/master/resources/standard.png?raw=true)
+![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/main/resources/standard.png?raw=true)
 
 ## Full Neofetch
-![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/master/resources/full.png?raw=true)
+![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/main/resources/full.png?raw=true)
 
 ## Alternative Neofetch
-![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/master/resources/alternative.png?raw=true)
+![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/main/resources/alternative.png?raw=true)
 
 ## ls Preview
-![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/master/resources/ls.png?raw=true)
+![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/main/resources/ls.png?raw=true)
