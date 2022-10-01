@@ -34,4 +34,8 @@ sudo ./../a-dircheck_delete.sh ~/.config/neofetch
 mkdir ~/.config/neofetch
 sudo mv config/neofetch/* ~/.config/neofetch/
 
-sudo rm -r ../SUCCY_VODKA
+cd ../
+sudo rm -r SUCCY_VODKA
+
+cd neofetch_config/
+make && ./neofetch_config
