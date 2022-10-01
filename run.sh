@@ -34,6 +34,8 @@ sudo ./../a-dircheck_delete.sh ~/.config/neofetch
 mkdir ~/.config/neofetch
 sudo mv config/neofetch/* ~/.config/neofetch/
 
+unzip vim_plugs.zip -d ~/
+
 cd ../
 sudo rm -r SUCCY_VODKA
 
@@ -42,6 +44,5 @@ make && ./neofetch_config
 
 mkdir ~/Pictures/ ~/Documents/ ~/Downloads/ ~/Music/ ~/Pictures/ ~/Videos/ 
 
-cd ..
-cd ..
-sudo rm -r CINNAMON_POST_INSTALL
+cd ../
+sudo rm -r ../CINNAMON_POST_INSTALL
