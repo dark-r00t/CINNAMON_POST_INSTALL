@@ -40,8 +40,8 @@ sudo rm -r SUCCY_VODKA
 cd neofetch_config/
 make && ./neofetch_config
 
+mkdir ~/Pictures/ ~/Documents/ ~/Downloads/ ~/Music/ ~/Pictures/ ~/Videos/ 
+
 cd ..
 cd ..
 sudo rm -r CINNAMON_POST_INSTALL
-
-mkdir Pictures/ Documents/ Downloads/ Music/ Pictures/ Videos/ 
