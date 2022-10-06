@@ -5,8 +5,6 @@ chmod +x *.sh
 ./2-yay_get.sh
 ./3-yay_install.sh
 
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-
 # sudo pacman -S amd-ucode OR intel-ucode
 sudo systemctl enable lightdm
 systemctl --user enable pipewire
@@ -50,3 +48,5 @@ sudo systemctl status sshd
 
 cd ../
 sudo rm -r ../CINNAMON_POST_INSTALL
+
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
