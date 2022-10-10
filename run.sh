@@ -46,7 +46,10 @@ sudo systemctl status pipewire
 sudo systemctl status tor  
 sudo systemctl status sshd
 
-cd ../
-sudo rm -r ../CINNAMON_POST_INSTALL
-
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+cd ~/
+
+sudo rm -r CINNAMON_POST_INSTALL/
+
+neofetch; ls
