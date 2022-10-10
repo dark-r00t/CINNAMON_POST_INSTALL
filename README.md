@@ -7,6 +7,9 @@
 <br>`chmod +x run.sh` 
 <br>`./run.sh` 
 
+## Once you're in the Cinnamon DE...
+<br> `System Settings -> Themes -> Add/Remove -> Download: [Adapta-Nokto] [CBlack]
+
 ## Standard Neofetch
 ![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/main/resources/standard.png?raw=true)
 
