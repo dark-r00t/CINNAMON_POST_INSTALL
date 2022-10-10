@@ -52,9 +52,7 @@ int main(void) {
 		goto TOP;
 	
 	}
-
-	system("neofetch");
-
+	
 	free(str);
 	return 0;
 }
