@@ -11,9 +11,9 @@ timedatectl set-ntp true
 
 fdisk /dev/sda
 g
-n _ _ + 550M
+n _ _ +550M
 t 1 
-n _ _ + 2G 
+n _ _ +2G 
 t 2 19
 n _ _ _ 
 w
@@ -54,7 +54,7 @@ pacman -S sudo
 visudo
 # uncomment %wheel ALL=(ALL:ALL) ALL:ALL
 
-pacman -S grub networkmanager efibootmgr dosfstools os-prober mtools gcc make git
+pacman -S grub networkmanager efibootmgr dosfstools os-prober mtools git
 
 mkdir /boot/EFI
 mount /dev/sda1 /boot/EFI
