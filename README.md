@@ -10,6 +10,11 @@
 ## Once you're in the Cinnamon DE...
 <br> `System Settings -> Themes -> Add/Remove -> Download: [Adapta-Nokto] [CBlack]`
 
+## ToDo
+<br> enable chaotic aur
+<br> change default screenshot path: `mkdir ~/Pictures/screenshots` `gsettings set org.gnome.gnome-screenshot auto-save-directory 'file:///home/anon/Pictures/screenshots'` `gsettings get org.gnome.gnome-screenshot auto-save-directory`
+<br> change wallpaper: `gsettings set org.cinnamon.desktop.background picture-uri --schemadir "file://home/anon/Pictures/wallpaper.jpg"`
+
 ## Standard Neofetch
 ![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/main/resources/standard.png?raw=true)
 
