@@ -24,7 +24,7 @@ swapon /dev/sda2
 mkfs.ext4 /dev/sda3
 
 mount /dev/sda3 /mnt
-pacstrap /mnt base base-devel linux linux-firmware vim
+pacstrap /mnt base base-devel linux-zen linux-firmware vim
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt
