@@ -1,6 +1,7 @@
 # on first login
 
 chmod +x *.sh
+./chaotic_aur.sh
 ./1-pacman_install.sh
 ./2-yay_get.sh
 ./3-yay_install.sh
