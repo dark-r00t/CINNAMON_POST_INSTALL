@@ -46,6 +46,5 @@ sudo systemctl status pipewire
 sudo systemctl status tor  
 sudo systemctl status sshd
 
-pfetch
-
+curl -L https://install.perlbrew.pl | bash
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
