@@ -1,1 +1,1 @@
-yay -S downgrade qpdfview fzf ytfzf gammy pfetch ttf-material-design-icons-extended spotify spotify-adblock nerd-fonts-fantasque-sans-mono ttf-ms-fonts onlyoffice-bin sublime-text-4 visual-studio-code-bin
+yay -S gammy ttf-material-design-icons-extended 
