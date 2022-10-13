@@ -4,7 +4,8 @@
 do not use unless you want to be a jan clone
 ## How to use if you ignored previous line:
 ```
-git clone https://github.com/dark-r00t/CINNAMON_POST_INSTALL.git; cd CINNAMON_POST_INSTALL/
+git clone https://github.com/dark-r00t/CINNAMON_POST_INSTALL.git 
+cd CINNAMON_POST_INSTALL/
 chmod +x run.sh 
 ./run.sh
 ``` 
