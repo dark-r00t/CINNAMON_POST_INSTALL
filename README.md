@@ -4,7 +4,9 @@
 do not use unless you want to be a jan clone
 ## How to use if you ignored previous line:
 ```
+// Needs to be in ~/ directory of your created newly created user...
 git clone https://github.com/dark-r00t/CINNAMON_POST_INSTALL.git 
+// You need to cd into the direc, instead of running the script outside of it.
 cd CINNAMON_POST_INSTALL/
 chmod +x run.sh 
 ./run.sh
