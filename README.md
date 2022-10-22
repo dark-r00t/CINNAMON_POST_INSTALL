@@ -26,6 +26,12 @@ change wallpaper:
 ```
 gsettings set org.cinnamon.desktop.background picture-uri "file://home/anon/Pictures/wallpaper.jpg"
 ```
+not sure, but i think lightdm-slick-greeter might needto be added
+```
+sudo vim /etc/lightdm/lightdm.conf
+[Seat:*]
+greeter-session=lightdm-slick-greeter
+```
 
 ## Standard Neofetch
 ![alt text](https://github.com/dark-r00t/CINNAMON_POST_INSTALL/blob/main/resources/standard.png?raw=true)
