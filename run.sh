@@ -42,6 +42,10 @@ make && ./neofetch_config
 
 mkdir ~/Pictures/ ~/Documents/ ~/Downloads/ ~/Music/ ~/Pictures/ ~/Videos/ 
 
+sudo mkdir /usr/share/backgrounds/nocturnexiii/
+sudo cp ../resources/wallpaper.jpg /usr/share/backgrounds/nocturnexiii/
+printf '[Greeter]\ndraw-grid=false\nbackgrpimd=/usr/share/backgrounds/nocturnexiii/wallpaper.jpg\n' >> /etc/lightdm/slick-greeter.conf
+
 sudo systemctl status lightdm
 sudo systemctl status pipewire
 sudo systemctl status tor  
