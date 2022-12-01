@@ -17,7 +17,7 @@ mv .vimrc ~/
 
 dconf load /com/gexperts/Tilix/ < Tilix/tilix.dconf
 
-dconf load /org/cinnamon/ < Cinnamon/cinnamon_desktop
+# dconf load /org/cinnamon/ < Cinnamon/cinnamon_desktop
 
 ./../b-dircheck_make.sh ~/.moc
 mv moc/* ~/.moc
